@@ -1,0 +1,33 @@
+#!/usr/bin/env python
+
+import sys
+
+for line in sys.stdin:
+	line = line.strip()
+	key_value = line.split(',')
+	key = key_value[0]
+	#print key
+	value_in = key_value[1]
+	#print value_in
+	if value_in.isdigit(): 
+		print( '%s\t%s' % (key, value_in))
+	else:
+		if value_in == 'ABC':
+			print( '%s\t%s' % ( value_in, key))
+
+def split_fileA(line):
+    # split the input line in word and count on the comma
+    key_value = line.split(',')
+    # turn the count to an integer  
+    word = key_value[0]
+    count = int(key_value[1])
+    return (word, count)
+
+def split_fileB(line):
+    # split the input line into word, date and count_string
+    key_value = line.split(' ')
+    date = key_value[0]
+    key_value = key_value[1].split(',')
+    word = key_value[0]
+    count_string=key_value[1]
+    return (word, date + " " + count_string) 

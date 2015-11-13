@@ -1,0 +1,86 @@
+ls
+;
+quit;
+create table wcount_t(word string, count int) row format delimited fields terminated by '\t' stored as textfile;
+show tables;
+create database mydb;
+load data local inpath �/test.csv� into table NYSE
+;
+load data local inpath '/test.csv' into table NYSE
+;
+create table NYSE (exchange String,stock_symbol String,stock_date String,stock_price_open double, stock_price_high double, stock_price_low double, stock_price_close double, stock_volume double, stock_price_adj_close double) row format delimited fields terminated by ',';
+create table NYSE (exchange String,stock_symbol String,stock_date String,stock_price_open double, stock_price_high double, stock_price_low double, stock_price_close double, stock_volume double, stock_price_adj_close double) row format delimited fields terminated by',';
+create table NYSE(exchange String,stock_symbol String,stock_date String,stock_price_open double, stock_price_high double, stock_price_low double, stock_price_close double, stock_volume double, stock_price_adj_close double) row format delimited fields terminated by',';
+create table NYSE (exchange String,stock_symbol String,stock_date String,stock_price_open double, stock_price_high double, stock_price_low double, stock_price_close double, stock_volume double, stock_price_adj_close double) row format delimited fields terminated by',';
+EXTERNAL TABLE IF NOT EXISTS NYSE(
+exchange String,
+stock_symbol String,
+stock_date String,
+stock_price_open double, 
+stock_price_high double, 
+stock_price_low double, 
+stock_price_close double, 
+stock_volume double, 
+stock_price_adj_close double)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+LOCATION '/test.csv'; 
+EXTERNAL TABLE IF NOT EXISTS NYSE(
+exchange String,
+stock_symbol String,
+stock_date String,
+stock_price_open double, 
+stock_price_high double, 
+stock_price_low double, 
+stock_price_close double, 
+stock_volume double, 
+stock_price_adj_close double)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+CREATE EXTERNAL TABLE IF NOT EXISTS NYSE(
+exchange String,
+stock_symbol String,
+stock_date String,
+stock_price_open double, 
+stock_price_high double, 
+stock_price_low double, 
+stock_price_close double, 
+stock_volume double, 
+stock_price_adj_close double)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+LOCATION '/test.csv'; 
+CREATE NYSE(
+exchange String,
+stock_symbol String,
+stock_date String,
+stock_price_open double, 
+stock_price_high double, 
+stock_price_low double, 
+stock_price_close double, 
+stock_volume double, 
+stock_price_adj_close double)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+LOCATION '/test.csv'; 
+CREATE TABLE NYSE(
+exchange String,
+stock_symbol String,
+stock_date String,
+stock_price_open double, 
+stock_price_high double, 
+stock_price_low double, 
+stock_price_close double, 
+stock_volume double, 
+stock_price_adj_close double)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+LOCATION '/test.csv'; 
+row format delimited fields terminated by;
+CREATE TABLE NYSE(
+exchange String,
+stock_symbol String,
+stock_date String,
+stock_price_open double, 
+stock_price_high double, 
+stock_price_low double, 
+stock_price_close double, 
+stock_volume double, 
+stock_price_adj_close double)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+LOCATION '/test.csv'; 
